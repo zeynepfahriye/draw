@@ -11,9 +11,6 @@ const [randomWord,setRandomWord] = useState('')
     const myDb = db.toString().split(',')
     return myDb[Math.floor(Math.random()*myDb.length)]
   }
-  const ref = useRef(!null);
-  const [color, setColor] = useState('black');
-  const [strokeWidth, setStrokeWidth] = useState(1);
   return (
     <SafeAreaView style={{flex:1}}>
     <Button
